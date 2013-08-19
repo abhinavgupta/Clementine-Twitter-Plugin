@@ -5,10 +5,10 @@ import tweepy
 
 bus = Bus(Bus.TYPE_SESSION)
 
-consumer_key		= "IvbTe3U1IL2QELEtH9xJQ" #your consumer key
-consumer_secret		= "bFG3ZvKznVRyPmM96wG6cjtDLGV6ERZoVBBOhv8W9M" #your consumer secret
-access_token		= "395428377-NMg3CEaF3on02pUyoMuIDGR3g5RFDQotdFEr93V2" #your acces token
-access_token_secret	= "6RnB4nEn7J3jjHMwFBBpGd1tzh2PHPkhlVjPphFSb8" #your access token secret
+consumer_key		= "" #your consumer key
+consumer_secret		= "" #your consumer secret
+access_token		= "" #your acces token
+access_token_secret	= "" #your access token secret
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
