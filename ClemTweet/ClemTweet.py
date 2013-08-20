@@ -1,24 +1,13 @@
-#!/usr/bin/env python
-
 from dbus import Bus, DBusException
 import tweepy
 
 bus = Bus(Bus.TYPE_SESSION)
 
-consumer_key		= "" #your consumer key
-consumer_secret		= "" #your consumer secret
-access_token		= "" #your acces token
-access_token_secret	= "" #your access token secret
-
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
-
 def get_clem():
   try:
     return bus.get_object('org.mpris.clementine', '/Player')
   except DBusException:
-    print "Either Clementine is not running or you have something wrong with your D-Bus setup."
+    print "\x02Either Clementine is not running or you have something wrong with your D-Bus setup."
     return None
 
 def get_metadata():
@@ -28,7 +17,6 @@ def get_metadata():
     clemp = bus.get_object('org.mpris.clementine', '/Player')
     clemmd = clemp.GetMetadata()
 
- 
     try:
       artist = clemmd['artist']
     except KeyError:
@@ -51,4 +39,5 @@ def get_metadata():
 
     return output
 
-api.update_status(get_metadata())
+
+

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ClemTweet
+GenericName=App
+Comment=Update Current Song!
+Exec=/usr/local/bin/ClemTweetScript
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=/usr/share/icons/ClemTweet/twitter_music.jpg
