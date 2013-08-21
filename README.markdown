@@ -51,8 +51,8 @@ A Simple Python Script to tweet your current playing song as a #NowPlaying tweet
 
 ## Using the Desktop Application
 	
-	Okay, it sucks. But everytime you feel like tweeting your current song, just click on the icon. Working to 
-	making it proper plugin rather than this. But this is just the version 0.1
+	Okay, it sucks. But everytime you feel like tweeting your current song, just click on the icon. 
+	It will tweet your current playing song.
 	
 
 ## TODO
